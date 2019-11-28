@@ -1,0 +1,23 @@
+{
+  "name": "slack-clone",
+  "version": "1.0.0",
+  "description": "A side project for me. This will only contain the node code or anything needs for the developement except UI will be used with docker.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarun4all/slack-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarun4all/slack-clone/issues"
+  },
+  "homepage": "https://github.com/tarun4all/slack-clone#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1"
+  }
+}
