@@ -1,9 +1,16 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Slack' });
+router.get('/', middleware.subdomain ,function(req, res, next) {
+  console.log(req.subdomain, req.subdomains);
+  res.render('index', { title: req.subdomain });
+});
+
+router.group('/api', (app) => {
+  app.get('/login', (req, res) => {
+    res.send('oh');
+  });
 });
 
 module.exports = router;
