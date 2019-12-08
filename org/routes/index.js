@@ -1,5 +1,12 @@
 const express = require('express');
 const router = express.Router();
+const path = require('path');
+
+router.get('/reactTest', (req, res) => {
+  console.log('req params', req.cookies.name);
+  res.cookie('name', 'pappu', { maxAge: 900000, httpOnly: true});
+  res.sendFile(path.join(__dirname+'/../public/view/build/index.html'));
+});
 
 /* GET home page. */
 router.get('/', middleware.subdomain ,function(req, res, next) {
