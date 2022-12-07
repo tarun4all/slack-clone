@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/tarun4all/slack-clone#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-generator": "^4.16.1"
   }
 }
